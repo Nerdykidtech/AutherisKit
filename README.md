@@ -13,7 +13,7 @@ Yes. Autheris never adds a code just because a link arrived. Since 2.8 it shows 
 ## Requirements
 
 - iOS 15, macOS 12 or visionOS 1, Swift 6
-- The `autheris://add` link needs Autheris 2.10 or later. On older versions the button falls back to `otpauth://`.
+- The `autheris://add` link needs Autheris 3.0 or later. On older versions the button falls back to `otpauth://`.
 
 ## Install
 

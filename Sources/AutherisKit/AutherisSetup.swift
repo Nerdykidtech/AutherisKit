@@ -88,7 +88,7 @@ public struct AutherisSetup: Hashable, Sendable {
     /// `autheris://add?uri=<otpauth link>`, which opens Autheris specifically.
     ///
     /// A bare `otpauth://` link goes to whichever authenticator iOS picks for the
-    /// scheme; this one always goes to Autheris. Needs Autheris 2.10 or later.
+    /// scheme; this one always goes to Autheris. Needs Autheris 3.0 or later.
     public func autherisURL() throws(Problem) -> URL {
         let inner = try otpauthURL().absoluteString
         return URL(string: "autheris://add?uri=\(Self.encode(inner))")!
